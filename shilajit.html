@@ -71,7 +71,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     .offer-title{font-weight:700}
     .offer-badge{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;padding:4px 8px;border-radius:999px;border:1px solid rgba(255,255,255,0.06);margin-left:6px}
     .badge-hot{background:#1e3a8a;color:#fff;border-color:transparent}
-    .badge-save{background:#cf27dd;color:#fff;border-color:transparent;padding:3px 16px}
+    .badge-save{background:#0c9d4e;color:#fff;border-color:transparent;padding:3px 16px;font-size: 10px;}
     .price{display:flex;flex-direction:column;align-items:flex-end}
     .price .compare{color:#94a3b8;text-decoration:line-through;font-size:.9rem}
     .price .current{font-size:1rem;font-weight:800}
@@ -251,39 +251,39 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       <div class="body">
         <!-- Selector de ofertas --> <a href="#orderForm">
         <div class="offers" id="offerList">
-          <div class="offer-card" data-offer="Compra 1" data-qty="1" data-price="89900" tabindex="0">
+          <div class="offer-card" data-offer="Compra 1" data-qty="1" data-price="105000" tabindex="0">
             <div class="offer-img"><img loading="lazy" src="https://desintoxica.renovexenlinea.com/imageneswebp/detoxsolo.webp" alt="Shilahit 1 frasco" style="box-shadow:none;border:none;"></div>
             <div>
-              <div class="offer-title">Solo Desintoxica</div>
-              <div class="muted">1 Shilahit Detox (90 tabletas)</div>
-              <span class="offer-badge badge-hot">Oferta</span>
+              <div class="offer-title">Desintoxica</div>
+              <div class="muted">1 MES</div>
+              <!--<span class="offer-badge badge-hot">Oferta</span>-->
             </div>
-            <div class="price"><span class="current">$89.900</span></div>
+            <div class="price"><span class="current">$105.000</span></div>
           </div>
 
-          <div class="offer-card" data-offer="Compra 1 + Virilex -50%" data-qty="2" data-price="149900" tabindex="0">
-            <div class="offer-img"><img loading="lazy" src="https://desintoxica.renovexenlinea.com/imageneswebp/detoxh90.webp" alt="Shilahit x2" style="box-shadow:none;border:none;"></div>
+          <div class="offer-card" data-offer="Compra 1 + Virilex -50%" data-qty="2" data-price="150000" tabindex="0">
+            <div class="offer-img"><img loading="lazy" src="https://desintoxica.renovexenlinea.com/imageneswebp/detoxduo.webp" alt="Shilahit x2" style="box-shadow:none;border:none;"></div>
             <div>
               <div class="offer-title">Desintoxica y Restaura</div>
-              <div class="muted">1 Shilahit Detox + Shilahit H90</div>
-              <span class="offer-badge badge-hot">Soy Hombre</span>
+              <div class="muted">2 MESES</div>
+              <!--<span class="offer-badge badge-hot">La más comprada</span>-->
             </div>
             <div class="price">
-              <span class="compare">$180.000</span>
-              <span class="current">$149.900</span>
+              <span class="compare">$210.000</span>
+              <span class="current">$150.000</span>
             </div>
           </div>
 
-          <div class="offer-card" data-offer="Compra 2 + 1 GRATIS" data-qty="3" data-price="149900" tabindex="0">
-            <div class="offer-img"><img loading="lazy" src="https://desintoxica.renovexenlinea.com/imageneswebp/detoxm90.webp" alt="Shilahit 2+1" style="box-shadow:none;border:none;"></div>
+          <div class="offer-card" data-offer="Compra 2 + 1 GRATIS" data-qty="3" data-price="180000" tabindex="0">
+            <div class="offer-img"><img loading="lazy" src="https://desintoxica.renovexenlinea.com/imageneswebp/detoxtrio.webp" alt="Shilahit 2+1" style="box-shadow:none;border:none;"></div>
             <div>
-              <div class="offer-title">Desintoxica y Restaura</div>
-              <div class="muted">1 Shilahit Detox + Shilahit M90</div>
-              <span class="offer-badge badge-save">Soy Mujer</span>
+              <div class="offer-title">Desintoxica, Restaura y Nutre</div>
+              <div class="muted">3 MESES</div>
+              <span class="offer-badge badge-save">La más Vendida</span>
             </div>
             <div class="price">
-              <span class="compare">$180.000</span>
-              <span class="current">$149.900</span>
+              <span class="compare">$315.000</span>
+              <span class="current">$180.000</span>
             </div>
           </div>
         </div></a>
@@ -430,8 +430,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       // Helpers de qty
       function qtyLabelFromQ(q){
         if (q === 1) return '1 Shilajit Detox';
-        if (q === 2) return '1 Shilajit Detox + 1 H90';
-        if (q === 3) return '1 Shilajit Detox + 1 M90';
+        if (q === 2) return '2 Shilajit Detox';
+        if (q === 3) return '3 Shilajit Detox';
         return `${q} productos`;
       }
 
@@ -636,5 +636,4 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   </script>
 </body>
 </html>
-
 
