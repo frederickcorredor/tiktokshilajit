@@ -383,6 +383,39 @@
 
   <!-- JS -->
   <script>
+
+// Clase para ocultar el body sin romper estilos
+  (function () {
+    // Crea una clase CSS solo una vez
+    const style = document.createElement('style');
+    style.textContent = `.hidden-body{ display:none !important; }`;
+    document.head.appendChild(style);
+
+    const mq = window.matchMedia('(min-width: 701px)');
+
+    function toggleBodyDisplay(e) {
+      const matches = (e && 'matches' in e) ? e.matches : mq.matches;
+      // Si es mayor a 700px -> ocultar
+      if (matches) document.body.classList.add('hidden-body');
+      else document.body.classList.remove('hidden-body');
+    }
+
+    // Ejecuta al cargar y cuando cambie el tamaño
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', toggleBodyDisplay);
+    } else {
+      toggleBodyDisplay();
+    }
+
+    mq.addEventListener ? mq.addEventListener('change', toggleBodyDisplay)
+                        : mq.addListener(toggleBodyDisplay); // fallback navegadores antiguos
+
+    window.addEventListener('resize', toggleBodyDisplay);
+    window.addEventListener('orientationchange', toggleBodyDisplay);
+  })();
+
+
+    
     (function(){
       // ========= CONFIG =========
       // URL del webhook (versión sin upsell)
@@ -681,3 +714,4 @@
   </script>
 </body>
 </html>
+
